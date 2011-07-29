@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<plugin>
+    <name>flashOpaque</name>
+    <creationDate>2011-07-27</creationDate>
+    <author>m8rge</author>
+    <authorEmail>to.merge@gmail.com</authorEmail>
+    <authorUrl>http://66.ru</authorUrl>
+    <license>GNU General Public License</license>
+    <description>enable wmode opaque on all flash banners</description>
+    <version>1.0.0</version>
+    <oxversion>2.7.30-beta-rc11</oxversion>
+    <extends>deliveryAdRender</extends>
+
+    <install>
+        <files>
+            <file path="{MODULEPATH}deliveryAdRender/flashOpaque/">flashOpaque.delivery.php</file>
+        </files>
+
+
+        <components>
+            <component>
+				<name>flashOpaque</name>
+				<hook>postAdRender</hook>
+			</component>
+        </components>
+
+    </install>
+
+</plugin>
